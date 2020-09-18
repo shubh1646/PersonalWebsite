@@ -1,4 +1,4 @@
-const texts = ['Asshole',"boba","lola"];
+const texts = ['Student','Thinker','Hacker',"Developer","Problem Solver"]; 
 
 let count = 0;
 let index = 0;
@@ -7,8 +7,9 @@ let letter = '';
 
 
 
-//a self invoked function
 
+
+//Self invoked function for typewriter effect
 (function typeEffect(){
     if(count === texts.length){
         count  = 0 ;
@@ -23,3 +24,18 @@ let letter = '';
     }
     setTimeout(typeEffect,400)
 })();
+
+
+
+
+function bgChanger(){
+    if(window.scrollY > this.innerHeight/2){
+        document.body.classList.add('bg-active');
+    }
+    else{
+     document.body.classList.remove('bg-active');
+    }
+ }
+ 
+ 
+ window.addEventListener('scroll',bgChanger);

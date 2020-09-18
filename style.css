@@ -1,45 +1,174 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font: inherit;
+    box-sizing: border-box;
 }
 
 
-.box{
-    width: 450px;
-    background: rgb(0, 0,0,0.1);
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #132743; 
+    transition: all 0.7s ease;
+   
+}
+
+.container-header{
+  height: 50vh;
+  padding-top: 100px;
+ 
+  
+}
+.header{
+   height: 100vh;
+    min-height: 100vh;
+    padding: 50px 20px;
+    padding-top: 100px;
+    display: flex;
+   padding-bottom: 0;
     
-    font-family:  'Century-Gothic',sans-serif;
-
+    
+}
+.button-conatiner{
+  padding-top: 110px;
+}
+.type{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 41%;
 }
 
-.box-img{
+
+.mid-part{
+  transform: translateY(-30%);
+  
+}
+
+.profile-card__img {
+    width: 185px;
+    height: 185px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    overflow: hidden;
+   
+    z-index: 4;
+    box-shadow: 0px 5px 50px 0px #303841, 0px 0px 0px 7px #7e8a97 ;
 }
+
+.profile-card__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-card__cnt {
+    margin-top: -35px;
+    text-align: center;
+    padding: 0 20px;
+    padding-bottom: 12px;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+.profile_name {
+    font-weight: 700;
+    font-size: 40px;
+    color: #6944ff;
+    position: relative;
+    left: -7%;
+    margin-bottom: 3px;
+}
+.profile_name_intro {
+    font-weight: 700;
+    font-size: 40px;
+    color: #6944ff;
+    position: relative;
+    left: 4%;
+    margin-bottom: 15px;
+}
+.profile_name_intro_A {
+    font-weight: 700;
+    font-size: 40px;
+    color: #6944ff;
+    position: relative;
+    margin-bottom: 15px;
+    left: 36%;
+}
+.profile-card__txt strong {
+    font-weight: 700;
+}
+.profile-card-loc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.profile-card-loc__icon {
+    display: inline-flex;
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+.bg-active{
+   background-color: white;
+}
+
+
+.logo-container {
+   display: flex;
+   flex-direction: column;
+   top: 35%;
+   left: 6%;
+   position: absolute;
+
+   z-index: 4;
+}
+
+.icon-container {
+   margin: 0.9rem;
+   
+   width: 10%;
+}
+
+.icon-img:hover {
+   opacity: 0.8;
+   transform: translateY(-0.3rem);
+}
+
+.icon-img {
+   width: 100%;
+   opacity: 0.8;
+   cursor: pointer;
+}
+
 
 
 .typing {
     position: relative;
     color: blueviolet;
+   
 }
 
 
 .typing::after{
     content: "";
-    position: absolute;
     width: 1px;
-   
     height: 100%;
     border-right: 2px solid white;
     animation: blink 0.8s infinite ease;
 }
 
+@media only screen and (max-width: 1334px) {
+    .profile_name_intro_A {
+        width: 100%;
+        left : 10%
+    }
+    .logo-container{
+        margin: -17px;
+    }
+}
 
 @keyframes blink{
     0% {
@@ -82,3 +211,95 @@ body {
     100% { -webkit-transform: rotate(  0.0deg); transform: rotate(  0.0deg) }
   }
 
+
+  /* @import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
+
+button{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1px;
+  cursor: pointer;
+  margin: 20px 30px;
+  top: "50%";
+  left: "50%";
+  width: 20%;
+
+  background: rgba(0,0,0,0.09);
+}
+.btn1 span{
+  display: block;
+
+ color: aliceblue;
+
+ padding-left: 40px;
+ padding-right: 40px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+
+}
+button::before, button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+button:hover::before, button:hover::after{
+  width: 100%;
+}
+button:hover span::before, button:hover span::after{
+  height: 100%;
+}
+
+.btn1{
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 251px;
+}
+/*----- button 6 -----*/
+.btn1::before{
+    left: 50%;
+    top: 0;
+    transition-duration: 0.4s;
+  }
+  .btn1::after{
+    left: 50%;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+  .btn1 span::before{
+    left: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+  }
+  .btn1 span::after{
+    right: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+  }
+  .btn1:hover::before, .btn:hover::after{
+    left: 0;
+  }
+  .btn1:hover span::before, .btn:hover span::after{
+    top: 0;
+  }
