@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+
+.box{
+    width: 450px;
+    background: rgb(0, 0,0,0.1);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    
+    font-family:  'Century-Gothic',sans-serif;
+
+}
+
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+.typing {
+    position: relative;
+    color: blueviolet;
+}
+
+
+.typing::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+   
+    height: 100%;
+    border-right: 2px solid white;
+    animation: blink 0.8s infinite ease;
+}
+
+
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+ 
+/* Wave animation */
+.wave{
+    -webkit-animation-name: wave-animation;
+            animation-name: wave-animation;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    display: inline-block;
+  }
+  
+  @-webkit-keyframes wave-animation {
+      0% { -webkit-transform: rotate(  0.0deg); transform: rotate(  0.0deg) }
+     10% { -webkit-transform: rotate(-10.0deg); transform: rotate(-10.0deg) }
+     20% { -webkit-transform: rotate( 12.0deg); transform: rotate( 12.0deg) }
+     30% { -webkit-transform: rotate(-10.0deg); transform: rotate(-10.0deg) }
+     40% { -webkit-transform: rotate(  9.0deg); transform: rotate(  9.0deg) }
+     50% { -webkit-transform: rotate(  0.0deg); transform: rotate(  0.0deg) }
+    100% { -webkit-transform: rotate(  0.0deg); transform: rotate(  0.0deg) }
+  }
+  
+  @keyframes wave-animation {
+      0% { -webkit-transform: rotate(  0.0deg); transform: rotate(  0.0deg) }
+     10% { -webkit-transform: rotate(-10.0deg); transform: rotate(-10.0deg) }
+     20% { -webkit-transform: rotate( 12.0deg); transform: rotate( 12.0deg) }
+     30% { -webkit-transform: rotate(-10.0deg); transform: rotate(-10.0deg) }
+     40% { -webkit-transform: rotate(  9.0deg); transform: rotate(  9.0deg) }
+     50% { -webkit-transform: rotate(  0.0deg); transform: rotate(  0.0deg) }
+    100% { -webkit-transform: rotate(  0.0deg); transform: rotate(  0.0deg) }
+  }
+
