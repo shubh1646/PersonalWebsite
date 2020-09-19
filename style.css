@@ -7,7 +7,7 @@
 
 body {
     font-family: "Quicksand", sans-serif;
-    background-color: #132743; 
+    background-color: white; 
     transition: all 0.7s ease;
    
 }
@@ -303,3 +303,61 @@ button:hover span::before, button:hover span::after{
   .btn1:hover span::before, .btn:hover span::after{
     top: 0;
   }
+
+
+
+
+  li.borderless { border-top: 0 none; }
+
+  .skills{
+      display: inline-block; 
+    
+  }
+
+  .skills{
+    display: flex;
+    
+  }
+
+  .table th {
+    text-align: center;  
+    padding-left: 1;
+    padding-right: 1; 
+ }
+ .table td{
+ padding-top: 0;
+ padding-bottom: 0;
+ padding-left: 1;
+ padding-right: 1;
+  margin: 0;
+ }
+
+
+ .skillz{
+  margin-top: 20%;
+  margin-bottom: 20%;
+ }
+
+ .Experience {
+   margin-left: 32%; 
+   padding-right: 10%;
+   margin-top: 20%;
+  margin-bottom: 20%;
+ }
+ 
+ .Experience h5{
+   margin-bottom: 0;
+ }
+
+
+.Experience li {
+  border: 0;
+  padding: 0;
+}
+.Experience ul{
+padding-bottom: 15px;
+padding-top: 15px;
+}
+
+
+
