@@ -209,7 +209,18 @@ body {
     100% { -webkit-transform: rotate(  0.0deg); transform: rotate(  0.0deg) }
   }
 
+  a {
 
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover 
+{
+     text-decoration:none; 
+     cursor:pointer;  
+     color: inherit;
+}
 
 .btn{
   font-size: 2em;
@@ -561,3 +572,13 @@ a:hover, a:focus{
 }
 
 
+
+
+
+.bottom-container{
+  
+  height: 100px;
+  width: 100%;
+  padding-top: 100px;
+  background-color: #161515; 
+}
