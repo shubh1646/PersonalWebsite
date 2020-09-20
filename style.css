@@ -4,7 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Lato:wght@700&family=Playfair+Display&family=Roboto&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Lato:wght@700&family=Playfair+Display&family=Roboto:wght@300;400&display=swap');
 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +30,7 @@
 
 }
 
-.h6, h6{
+.intro-line{
   display:flex;
   justify-content:center;
   align-items:center; 
@@ -95,48 +100,8 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
-/* .profile-card__cnt {
-    margin-top: -35px;
-    text-align: center;
-    padding: 0 20px;
-    padding-bottom: 12px;
-    flex-direction: column;
-    transition: all 0.3s;
-}
-.profile_name {
-    font-weight: 700;
-    font-size: 40px;
-    color: #6944ff;
-    position: relative;
-    left: -7%;
-    margin-bottom: 3px;
-}
-.profile_name_intro {
-    font-weight: 700;
-    font-size: 40px;
-    color: #6944ff;
-    position: relative;
-    left: 4%;
-    margin-bottom: 15px;
-}
-.profile_name_intro_A {
-    font-weight: 700;
-    font-size: 40px;
-    color: #6944ff;
-    position: relative;
-    margin-bottom: 15px;
-    left: 36%;
-}
-.profile-card__txt strong {
-    font-weight: 700;
-}
-.profile-card-loc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 600;
-} */
+
+
 .profile-card-loc__icon {
     display: inline-flex;
     font-size: 27px;
@@ -245,12 +210,6 @@ body {
   }
 
 
-  /* @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-} */
 
 .btn{
   font-size: 2em;
@@ -392,15 +351,43 @@ CSS for skills and exp section
   font-size: 3.55rem;
 }
 
+
+.exp-head{
+  font-size: 4.75em;
+  font-family: 'Lato', sans-serif;
+  color: #161515;
+}
+.exp-position{
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+.exp-company{
+  font-size: 20px;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.list-group-item{
+font-size: 18px ;
+font-family: 'Roboto', sans-serif;
+font-weight: 300 ;
+
+}
+
+
  .Experience {
    margin-left: 32%; 
    padding-right: 10%;
    margin-top: 20%;
   margin-bottom: 20%;
+ 
  }
  
  .Experience h5{
    margin-bottom: 0;
+ 
  }
 
 
@@ -421,6 +408,13 @@ padding-top: 25px;
 /*
 ** CSS For project section
 */
+
+.proj-head{
+  font-size: 3.55em;
+  font-family: 'Major Mono Display', monospace;
+  color: #161515;
+  text-align: center;  
+}
 
 .project{
   display: inline-block;
@@ -495,10 +489,6 @@ padding-top: 25px;
 * demo styles for photobox
 */
 
-.projects{
-  padding: 20%;
-  margin: 20%;
-}
 .project{
   color: #fff;
   font-size: 2.5rem;
@@ -530,7 +520,8 @@ padding-top: 25px;
 }
 
 .projects{
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   color: #fff;
   margin: 0;
@@ -540,8 +531,13 @@ padding-top: 25px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;  
-  padding: 10px;
-  margin: 10px;
+
+
+  padding: 12px;
+  margin: 12px;
+
+ 
+  
 }
 
 a{
