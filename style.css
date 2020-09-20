@@ -126,7 +126,7 @@ body {
 .icon-container {
    margin: 0.9rem;
    
-   width: 10%;
+   width: 5%;
 }
 
 .icon-img:hover {
@@ -316,7 +316,7 @@ button:hover span::before, button:hover span::after{
 CSS for skills and exp section
 */
 .skillz{
-  padding-left: 20%;
+ 
   font-family: 'Lato', sans-serif;
   margin-top: 20%;
   margin-bottom: 20%;
@@ -325,15 +325,7 @@ CSS for skills and exp section
 
   li.borderless { border-top: 0 none; }
 
-  .skills{
-      display: inline-block; 
-    
-  }
-
-  .skills{
-    display: flex;
-    
-  }
+  
 
   .table{
     font-size: 2rem;
@@ -357,7 +349,18 @@ CSS for skills and exp section
 .cert{
   font-size: 3.45rem;
   font-family: 'Special Elite', cursive;
+  text-align: center;
 }
+
+
+.cert-box{
+  display:flex;
+  justify-content:center;
+  align-items:center
+
+}
+
+
  .h3, h3 {
   font-size: 3.55rem;
 }
@@ -389,8 +392,7 @@ font-weight: 300 ;
 
 
  .Experience {
-   margin-left: 32%; 
-   padding-right: 10%;
+
    margin-top: 20%;
   margin-bottom: 20%;
  
@@ -413,9 +415,15 @@ padding-top: 25px;
 
 
 
+.exp-head{
+  text-align: center;  
+}
 
-
-
+.exp-content{
+  
+  margin-left: 5%;
+  padding-left: 8%;
+}
 /*
 ** CSS For project section
 */
