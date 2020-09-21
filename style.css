@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Lato:wght@700&family=Playfair+Display&family=Roboto:wght@300;400&display=swap');
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 * {
@@ -67,6 +67,8 @@ body {
 }
 .button-conatiner{
   padding-top: 110px;
+  margin-bottom: 20%;
+
 }
 .type{
   margin-right: auto;
@@ -119,7 +121,6 @@ body {
    top: 35%;
    left: 6%;
    position: absolute;
-
    z-index: 4;
 }
 
@@ -243,15 +244,14 @@ button{
 
 .btn1 span{
   display: block;
-
  color: aliceblue;
-
  padding-left: 40px;
  padding-right: 40px;
  padding-top: 20px;
  padding-bottom: 20px;
 
 }
+
 button::before, button::after{
   content:"";
   width: 0;
@@ -546,14 +546,14 @@ padding-top: 25px;
   margin: 0;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;   
-  
   min-height: 100vh;
   display: flex;
   flex-direction: column;  
-
-
   padding: 12px;
+  
   margin: 12px;
+  margin-top: 10%;
+  margin-bottom: 10%;
 
  
   
@@ -587,6 +587,72 @@ a:hover, a:focus{
   
   height: 100px;
   width: 100%;
-  padding-top: 100px;
-  background-color: #161515; 
+  color: white;
+  text-align: center;
+  background-color: black
+ }
+
+
+
+.achivements{
+  margin-top: 20%;
+margin-bottom: 20%;
+}
+
+.achiv-head{
+  font-family: 'Special Elite', cursive;
+  text-align: center;  
+  font-size: 4.75em;
+}
+
+.achivements li{
+  border: 0;
+  padding: 1;
+}
+
+.achiv-cont{
+  margin-left: 5%;
+  padding-left: 8%;
+ 
+}
+
+.hack{
+  box-sizing: border-box;
+}
+.article{
+  font-size: 15px ;
+font-family: 'Roboto', sans-serif;
+font-weight: 300 ;
+  width:50%;
+  margin:30px;
+  padding:12px;
+  background:#efefef;
+  border-radius:5px;
+}
+
+.image{
+  background:silver;
+  width:500px;
+  object-fit: cover;
+  height:300px;
+  border-radius:5px;
+  padding:20px;
+  color:#efefef;
+  font-size:8rem;
+ 
+}
+.content{
+  padding: 0 20px;
+  color:#444;
+  
+}
+
+.second-hack{
+  margin-left: 50%;
+}
+
+.bottom-conatiner-text{
+  padding: 4%;
+  font-size: 22px;
+  font-family: 'Caveat', cursive;
 }
