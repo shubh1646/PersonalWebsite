@@ -101,6 +101,10 @@ var projBtn = document.querySelector('.projBtn');
 
 var expBtn = document.querySelector('.expBtn');
 
+var achivBtn  = document.querySelector('.achivBtn');
+
+
+
 projBtn.addEventListener('click',function(){
     smoothScroll('#proj',2500);
 })
@@ -111,3 +115,10 @@ projBtn.addEventListener('click',function(){
 expBtn.addEventListener('click',function(){
     smoothScroll('#exp',2500);
 })
+
+
+
+achivBtn.addEventListener('click',function(){
+    smoothScroll('#achiv',2500);
+})
+
