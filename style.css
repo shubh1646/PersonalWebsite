@@ -642,7 +642,7 @@ font-weight: 300 ;
  
 }
 .content{
-  padding: 0 20px;
+  padding:  20px;
   color:#444;
   
 }
@@ -654,5 +654,6 @@ font-weight: 300 ;
 .bottom-conatiner-text{
   padding: 4%;
   font-size: 22px;
+  padding-bottom: 0;
   font-family: 'Caveat', cursive;
 }
